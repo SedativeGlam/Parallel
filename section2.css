@@ -100,4 +100,10 @@
   .section2-grid-right {
     font-size: 10px;
   }
+
+  .section2-grid-left p,
+  .section2-grid-center p,
+  .section2-grid-right p {
+    font-size: 8px;
+  }
 }
