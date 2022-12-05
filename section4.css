@@ -1,0 +1,242 @@
+.section4-mobile-button {
+  display: none;
+}
+
+.section4-bg1 > img,
+.section4-bg2 > img,
+.section4-bg3 > img,
+.section4-bg4 > img {
+  margin: 55px 0 0 20px;
+  border-radius: 5px;
+}
+
+.section4-items-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section4-items-flex > h1 {
+  font-size: 43px;
+  font-family: "nunito sans";
+}
+
+.section4-items-flex > p {
+  display: flex;
+  align-items: center;
+}
+
+.section4-items-flex > p,
+a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  font-family: "nunito sans";
+}
+
+.section4-desktop-arrow,
+.section4-arrow {
+  margin-left: 8px;
+}
+
+.section4-items-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.section4-items-grid1,
+.section3-items-grid2,
+.section3-items-grid3,
+.section4-items-grid4 {
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  transition: transform 0.2s, box-shadow 0.4s;
+}
+
+.section4-items-grid1:hover,
+.section3-items-grid2:hover,
+.section3-items-grid3:hover,
+.section4-items-grid4:hover {
+  cursor: pointer;
+  box-shadow: 6px 6px 0;
+  transform: translate(-5px, -5px);
+}
+
+.section4-bg1,
+.section4-bg2,
+.section4-bg3,
+.section4-bg4 {
+  height: 81px;
+}
+
+.section4-bg1 {
+  background-image: url(./images/bg1.webp);
+  background-size: cover;
+}
+
+.section4-bg2 {
+  background-image: url(./images/bg2.webp);
+  background-size: cover;
+}
+
+.section4-bg3 {
+  background-image: url(./images/bg3.webp);
+  background-size: cover;
+}
+
+.section4-bg4 {
+  background-image: url(./images/bg4.webp);
+  background-size: cover;
+}
+
+.section4-grid-wrapper {
+  padding: 20px;
+}
+
+.section4-grid-title1,
+.section4-grid-title2,
+.section4-grid-title3,
+.section4-grid-title4 {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.section4-grid-description {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  opacity: 0.9;
+}
+
+.section4-open-positions {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  text-decoration: underline;
+}
+
+.section4-items-grid1-flex {
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.section4-grid-first-image > img,
+.section4-grid-second-image > img,
+.section4-grid-last-image > img {
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #daccff;
+  filter: blur(1px);
+}
+
+.section4-grid-second-image {
+  margin-left: -8px;
+}
+
+.section4-grid-last-image {
+  margin-right: 10px;
+}
+
+.section4-active-values {
+  font-size: 11px;
+  background-color: #daccff;
+  padding: 7px;
+  margin-right: 10px;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  margin-left: -5px;
+  z-index: 1;
+}
+
+.section4-active {
+  font-size: 15px;
+}
+
+.section4-buttons {
+  margin-top: 10px;
+  font-family: "nunito sans";
+  font-size: 15px;
+  background-color: #ffffff;
+  border-width: 1px;
+  width: 100%;
+  padding: 5px 0;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  box-shadow: 6px 6px 0;
+  transition: background-color 0.2s;
+}
+
+.section4-buttons:hover {
+  cursor: pointer;
+  background-color: #eafa35;
+}
+
+@media screen and (max-width: 767px) {
+  .section4-desktop-link,
+  .section4-desktop-arrow {
+    display: none;
+  }
+
+  .large-section {
+    padding: 60px 20px 0 20px;
+  }
+
+  .section4-items-grid {
+    grid-template-columns: 1fr;
+    max-width: 700px;
+  }
+
+  .section4-mobile-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-family: "nunito sans";
+    font-size: 18px;
+    background-color: #eafa35;
+    padding: 10px 40px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+    border-radius: 5px;
+    box-shadow: 6px 6px 0;
+  }
+
+  .section4-mobile-button > img {
+    margin-left: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1028px) {
+  .large-section {
+    padding: 60px 20px 0 20px;
+  }
+
+  .section4-mobile-button {
+    display: none;
+  }
+
+  .section4-items-grid1 {
+    min-width: 310px;
+    margin-right: 20px;
+  }
+
+  .section4-items-grid {
+    grid-template-columns: none;
+    gap: 0;
+    display: flex;
+    overflow: auto;
+  }
+}

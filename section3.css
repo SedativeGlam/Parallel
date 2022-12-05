@@ -1,0 +1,252 @@
+.large-section {
+  max-width: 1440px;
+  background-color: #fffbf7;
+  padding: 80px 80px 0 80px;
+  margin-bottom: 10px;
+}
+
+.section3-items-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section3-items-flex > h1 {
+  font-size: 43px;
+  font-family: "nunito sans";
+}
+
+.section3-items-flex > p {
+  display: flex;
+  align-items: center;
+}
+
+.section3-mobile-button {
+  display: none;
+}
+
+.section3-items-flex > p,
+a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  font-family: "nunito sans";
+}
+
+.section3-mobile-arrow {
+  display: none;
+}
+
+.section3-desktop-arrow {
+  margin-left: 8px;
+}
+
+.section3-items-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.section3-items-grid1,
+.section3-items-grid2,
+.section3-items-grid3,
+.section3-items-grid4 {
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.4s;
+}
+
+.section3-items-grid1:hover,
+.section3-items-grid2:hover,
+.section3-items-grid3:hover,
+.section3-items-grid4:hover {
+  cursor: pointer;
+  box-shadow: 6px 6px 0;
+  transform: translate(-5px, -5px);
+}
+
+.section3-items-grid1-flex1,
+.section3-items-grid2-flex1,
+.section3-items-grid3-flex1,
+.section3-items-grid4-flex1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-shadow {
+  box-shadow: 5px 5px 20px #daccff;
+  border-radius: 5px;
+}
+
+.section3-grid-title1,
+.section3-grid-title2,
+.section3-grid-title3,
+.section3-grid-title4 {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.section3-grid-description,
+.section3-grid-last-description {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  opacity: 0.9;
+}
+
+.section3-grid-last-description {
+  margin-top: 37px;
+}
+
+.section3-grid-description > span {
+  margin: 0 5px 8px 5px;
+}
+
+.section3-items-grid1-flex2,
+.section3-items-grid2-flex2,
+.section3-items-grid3-flex2,
+.section3-items-grid4-flex2 {
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.section3-grid-first-image {
+  margin-right: 10px;
+}
+
+.section3-grid-image1,
+.section3-grid-image2 {
+  filter: blur(1px);
+}
+
+.section3-grid-image2 {
+  margin-left: -5px;
+  z-index: 1;
+}
+
+.section3-grid-images2 {
+  margin-left: -5px;
+  z-index: 1;
+}
+
+.section3-grid-first-image > img,
+.section3-grid-images1 > img,
+.section3-grid-images2 > img {
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #daccff;
+  filter: blur(1px);
+}
+
+.section3-active-values {
+  font-size: 11px;
+  background-color: #daccff;
+  padding: 7px;
+  margin-right: 10px;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  margin-left: -5px;
+  z-index: 1;
+}
+
+.section3-active {
+  font-size: 15px;
+}
+
+.section3-buttons {
+  margin-top: 10px;
+  font-family: "nunito sans";
+  font-size: 17px;
+  background-color: #ffffff;
+  border-width: 1px;
+  width: 100%;
+  padding: 5px 0;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  box-shadow: 6px 6px 0;
+  transition: background-color 0.2s;
+}
+
+.section3-buttons:hover {
+  cursor: pointer;
+  background-color: #eafa35;
+}
+
+@media screen and (max-width: 767px) {
+  .section3-desktop-link,
+  .section3-desktop-arrow {
+    display: none;
+  }
+
+  .large-section {
+    padding: 60px 20px 0 20px;
+  }
+
+  .section3-items-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section3-mobile-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-family: "nunito sans";
+    font-size: 18px;
+    background-color: #eafa35;
+    padding: 10px 40px;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 6px 6px 0;
+  }
+
+  .section3-mobile-button > img {
+    margin-left: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1028px) {
+  .large-section {
+    padding: 60px 20px 0 20px;
+  }
+
+  .section3-mobile-button {
+    display: none;
+  }
+
+  .section3-items-grid {
+    grid-template-columns: none;
+    gap: 0;
+    display: flex;
+    overflow: auto;
+  }
+
+  .section3-items-grid1,
+  .section3-items-grid2,
+  .section3-items-grid3,
+  .section3-items-grid4 {
+    min-width: 310px;
+  }
+
+  .section3-items-grid2 {
+    margin: 0 20px;
+  }
+
+  .section3-items-grid3 {
+    margin-right: 20px;
+  }
+
+  .section3-grid-last-description {
+    margin-top: 20px;
+  }
+}

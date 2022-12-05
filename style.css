@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "work sans", sans-serif;
+  background-color: #fffbf7;
+  font-size: 17px;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.desktop-nav {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fffbf7;
+  padding: 20px 80px;
+  border-bottom-style: solid;
+  border-width: 2px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.nav-center {
+  background-color: rgb(251, 250, 252);
+  display: flex;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+  padding: 8px 15px;
+}
+
+.nav-center > input {
+  font-family: "work sans";
+  font-size: 16px;
+  background-color: #ffffff;
+  padding: 0;
+  padding-right: 120px;
+  margin-left: 5px;
+  border-style: none;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right > p {
+  margin: 0;
+  margin-right: 30px;
+}
+
+.nav-right > p:hover {
+  cursor: pointer;
+}
+
+.nav-right > button {
+  font-family: "work sans";
+  font-size: 17px;
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px 25px;
+  border-radius: 5px;
+  box-shadow: 6px 6px 0;
+  transition: background-color 0.2s;
+}
+
+.nav-right > button:hover {
+  cursor: pointer;
+  background-color: #eafa35;
+}
+
+@media screen and (max-width: 767px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fffbf7;
+  }
+
+  .nav-left {
+    display: flex;
+  }
+
+  .nav-right > button {
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px 15px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1028px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fffbf7;
+    border-bottom-style: solid;
+    border-width: 2px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+
+  .nav-left {
+    display: flex;
+  }
+
+  .nav-right > button {
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px 15px;
+    margin-right: 20px;
+  }
+}

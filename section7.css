@@ -1,0 +1,159 @@
+.section-7 > h1 {
+  margin-top: 70px;
+  font-size: 50px;
+  font-family: "nunito sans";
+  text-align: center;
+}
+
+.section7-flex-wrapper {
+  margin-top: 60px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+hr {
+  width: 81%;
+  opacity: 0.3;
+  margin-top: -2px;
+  margin-left: -2px;
+}
+
+.section7-flex-left-toplist,
+.section7-flex-left-otherlist {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.section7-flex-left-toplist:hover,
+.section7-flex-left-otherlist:hover {
+  cursor: pointer;
+}
+
+.section7-flex-left-toplist {
+  width: 83%;
+  background-color: white;
+  border-style: solid;
+  border-radius: 15px;
+  border-width: 1px;
+  padding: 15px 40px;
+  box-shadow: 6px 6px 0;
+}
+
+.section7-flex-left-toplist > p {
+  background-color: #eafa35;
+}
+
+.section7-flex-left-otherlist {
+  padding: 0 40px;
+}
+
+.section7-flex-left-otherlist > p {
+  background-color: white;
+}
+
+.section7-flex-left-toplist > p,
+.section7-flex-left-otherlist > p {
+  font-size: 22px;
+  margin-right: 15px;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1px;
+  padding: 3px 10px;
+  box-shadow: 3px 3px 0;
+}
+
+.section7-flex-left-toplist > h3,
+.section7-flex-left-otherlist > h3 {
+  font-size: 28px;
+  font-family: "work sans";
+  font-weight: 500;
+}
+
+.section7-flex-right {
+  width: 630px;
+  background-color: #daccff;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  padding: 75px;
+}
+
+.section7-flex-right > img {
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .section-7 > h1 {
+    text-align: start;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  .section7-flex-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section7-flex-left {
+    order: 2;
+  }
+
+  .section7-flex-left-toplist {
+    width: 100%;
+  }
+
+  .section7-flex-left-toplist,
+  .section7-flex-left-otherlist {
+    padding: 0 16px;
+  }
+
+  .section7-flex-left-toplist > h3,
+  .section7-flex-left-otherlist > h3 {
+    font-size: 20px;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  .section7-flex-right {
+    margin-top: -20px;
+    margin-bottom: 40px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 35px 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1028px) {
+  .section-7 > h1 {
+    margin-top: 100px;
+  }
+
+  .section7-flex-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section7-flex-left {
+    order: 2;
+  }
+
+  .section7-flex-left-toplist {
+    width: 100%;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  .section7-flex-right {
+    margin-bottom: 40px;
+    width: 60%;
+    border-radius: 5px;
+    padding: 35px 30px;
+  }
+}

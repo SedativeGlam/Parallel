@@ -1,0 +1,228 @@
+.mobile-section-1 {
+  display: none;
+}
+
+.desktop-section-1 {
+  width: 100%;
+  background-color: #fffbf7;
+  background-image: url(./images/grid.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.desktop-section1-wrapper {
+  max-width: 1440px;
+  padding: 30px 80px;
+}
+
+.section1-flex1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.section1-flex1 > h1,
+.section1-flex2 > h1,
+.section1-flex3 > h1 {
+  margin: 0;
+  font-size: 160px;
+  font-family: "nunito sans";
+}
+
+.section1-flex1-items2 > img {
+  margin-left: -40px;
+  margin-bottom: -200px;
+}
+
+.section1-flex1-items3 > img {
+  margin-top: -30px;
+  margin-right: -70px;
+}
+
+.section1-flex2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -90px;
+}
+
+.section1-flex2 > img {
+  margin-left: -77px;
+}
+
+.section1-flex2 > h1 {
+  margin-right: 90px;
+}
+
+.section1-flex3 > img {
+  margin-bottom: 90px;
+  margin-left: 55px;
+}
+
+.section1-flex3 > p {
+  font-size: 22px;
+  margin-top: -150px;
+  margin-left: 230px;
+  width: 600px;
+  word-wrap: break-word;
+}
+
+.section1-flex4 {
+  display: flex;
+  padding: 60px 0;
+}
+
+.section1-flex4 > input {
+  font-family: "work sans";
+  padding: 15px;
+  margin-left: 180px;
+  width: 35%;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.section1-flex4 > button {
+  font-family: "nunito sans";
+  font-size: 20px;
+  background-color: #eafa35;
+  margin-left: 20px;
+  padding: 0 60px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  transition: box-shadow 0.5s;
+}
+
+.section1-flex4 > button:hover {
+  cursor: pointer;
+  box-shadow: 6px 6px 0;
+}
+
+.right-arrow {
+  margin-left: 3px;
+}
+
+@media screen and (max-width: 767px) {
+  .desktop-section-1 {
+    display: none;
+  }
+
+  .mobile-section-1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fffbf7;
+    background-image: url(./images/grid.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .mobile-section1-wrapper {
+    padding: 40px 20px;
+  }
+
+  .mobile-section1-wrapper > h1 {
+    font-family: "nunito sans";
+    font-size: 60px;
+    margin-top: 0;
+    line-height: 1;
+  }
+
+  .mobile-section1-wrapper > p {
+    font-size: 20px;
+    font-family: "work sans";
+    margin-top: 0;
+  }
+
+  .mobile-section1-wrapper > input {
+    font-family: "work sans";
+    padding: 15px;
+    width: 100%;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+  }
+
+  .mobile-section1-wrapper > button {
+    width: 100%;
+    margin-top: 15px;
+    font-family: "nunito sans";
+    font-size: 20px;
+    background-color: #eafa35;
+    padding: 10px 0;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    transition: box-shadow 0.5s;
+  }
+
+  .mobile-section1-wrapper > button:hover {
+    cursor: pointer;
+    box-shadow: 6px 6px 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1028px) {
+  .desktop-section-1 {
+    display: none;
+  }
+
+  .mobile-section-1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fffbf7;
+    background-image: url(./images/grid.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .mobile-section1-wrapper {
+    padding: 60px 20px;
+  }
+
+  .mobile-section1-wrapper > h1 {
+    font-family: "nunito sans";
+    font-size: 110px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    line-height: 1;
+  }
+
+  .mobile-section1-wrapper > p {
+    font-size: 26px;
+    font-family: "work sans";
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+
+  .mobile-section1-wrapper > input {
+    width: 50%;
+    text-align: center;
+    font-family: "work sans";
+    font-size: 18px;
+    padding: 14px 0;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+  }
+
+  .mobile-section1-wrapper > button {
+    font-family: "nunito sans";
+    font-size: 20px;
+    background-color: #eafa35;
+    margin-left: 20px;
+    padding: 10px 50px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    transition: box-shadow 0.5s;
+  }
+
+  .mobile-section1-wrapper > button:hover {
+    cursor: pointer;
+    box-shadow: 6px 6px 0;
+  }
+}

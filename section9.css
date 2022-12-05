@@ -1,0 +1,139 @@
+.mobile-section-9 {
+  display: none;
+}
+
+.desktop-section-9 {
+  width: 100%;
+  background-image: url(./images/signup-bg-desktop.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.desktop-section9-wrapper {
+  max-width: 1440px;
+  padding: 80px 80px 100px;
+}
+
+.desktop-section9-wrapper img {
+  text-align: left;
+  margin-left: 55px;
+  margin-bottom: -40px;
+}
+
+.desktop-section9-wrapper h1 {
+  font-size: 80px;
+  font-family: "nunito sans";
+  text-align: center;
+  margin: 0;
+}
+
+.desktop-section-9 p {
+  text-align: center;
+  font-size: 20px;
+  font-family: "work sans";
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.section9-buttons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desktop-section9-wrapper .button-1 {
+  cursor: pointer;
+  font-family: "work sans";
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #eafa35;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  padding: 10px 60px;
+  border-radius: 5px;
+  box-shadow: 6px 6px 0;
+}
+
+.desktop-section9-wrapper .button-2 {
+  font-family: "work sans";
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #fff;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  box-shadow: 6px 6px 0;
+  margin-left: 18px;
+  transition: background-color 0.4s;
+}
+
+.desktop-section9-wrapper .button-2:hover {
+  background-color: #eafa35;
+}
+
+.second-coin {
+  text-align: right;
+  margin-top: -100px;
+  margin-right: 130px;
+}
+
+@media screen and (max-width: 767px) {
+  .desktop-section-9 {
+    width: 100%;
+    background-image: url(./images/signup-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .desktop-section9-wrapper {
+    padding: 50px 20px 150px 20px;
+  }
+
+  .desktop-section9-wrapper img {
+    display: none;
+  }
+
+  .desktop-section9-wrapper h1 {
+    font-size: 50px;
+  }
+
+  .section9-buttons {
+    margin-top: 40px;
+    flex-direction: column;
+  }
+
+  .desktop-section9-wrapper .button-1 {
+    width: 100%;
+  }
+
+  .desktop-section9-wrapper .button-2 {
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1028px) {
+  .desktop-section-9 {
+    width: 100%;
+    background-image: url(./images/signup-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .desktop-section9-wrapper {
+    padding: 150px 80px 250px;
+  }
+
+  .desktop-section9-wrapper img {
+    display: none;
+  }
+
+  .desktop-section9-wrapper h1 {
+    width: 550px;
+    word-wrap: break-word;
+  }
+}
