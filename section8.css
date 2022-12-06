@@ -37,6 +37,10 @@
   font-size: 23px;
 }
 
+.accordion-label p{
+  font-size: 16px;
+}
+
 .accordion-label img {
   transform: rotateY(-50%);
   transition: transform 0.4s;
@@ -47,7 +51,7 @@
 }
 
 .content {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.5;
   display: none;
 }
