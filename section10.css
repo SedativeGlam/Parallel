@@ -75,9 +75,15 @@ button {
 }
 
 .grid p {
+  cursor: pointer;
   font-family: "work sans";
   font-size: 16px;
   opacity: 0.8;
+  
+}
+
+.grid p:hover{
+  text-decoration: underline;
 }
 
 .section-10 .white-logo {
