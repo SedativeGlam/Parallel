@@ -28,28 +28,22 @@
 }
 
 .accordion-label {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   cursor: pointer;
   position: relative;
   padding: 20px 0;
   font-size: 23px;
 }
 
-.accordion-label:active {
-  color: #eafa35;
+.accordion-label img {
+  transform: rotateY(-50%);
+  transition: transform 0.4s;
 }
 
-.accordion-label::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: rotateY(-50%);
-  right: 20px;
-  width: 12px;
-  height: 6px;
-  background-image: url(./images/dropdown-light.svg);
-  background-size: contain;
-  transition: transform 0.4s;
+.accordion-label:active {
+  color: #eafa35;
 }
 
 .content {
@@ -66,7 +60,7 @@
   display: block;
 }
 
-.accordion-input:checked ~ .accordion-label::after {
+.accordion-input:checked ~ .accordion-label img {
   transform: translateY(-50%) rotate(0.5turn);
 }
 
@@ -81,12 +75,6 @@
 
   .accordion-label {
     font-size: 13px;
-    width: 260px;
-    word-wrap: break-word;
-  }
-
-  .accordion-label::after {
-    right: 0px;
   }
 }
 
